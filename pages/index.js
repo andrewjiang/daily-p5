@@ -21,10 +21,10 @@ class IndexPage extends Component {
     return (
       <Main>
         <Head>
-          <title>daily p5</title>          
+          <title>learning gen art</title>          
         </Head>
         <div>
-          <h2>Sketches</h2>
+          
           <div>
             {range(TOTAL_SKETCHES).map(i => {
               const ind = i + 1
@@ -32,9 +32,9 @@ class IndexPage extends Component {
               return (
                 <div key={`sketch-${ind}`} className="sketch-container">
                   <div className="sketch-holder">
-                    <P5Wrapper sketch={sketch(200, 200)}/>
+                    <P5Wrapper sketch={sketch(400, 400)}/>
                   </div>
-                  <a className="primary-button" onClick={() => Router.pushRoute(`/s/${ind}`) }>View {ind}</a>
+                  <a className="primary-button" onClick={() => Router.pushRoute(`/s/${ind}`) }>Edition {ind}</a>
                 </div>
               )
             })}
@@ -48,8 +48,8 @@ class IndexPage extends Component {
             margin: 8px;
           }
           .sketch-holder {
-            width: 200px;
-            height: 200px;
+            width: 400px;
+            height: 400px;
             display: -webkit-flex;
             display: flex;
             align-items: center;
