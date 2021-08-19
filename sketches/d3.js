@@ -38,7 +38,7 @@ const Sketch = (W, H) => (p) => {
   }
 
   p.setup = () => {
-    p.createCanvas(1.67*W, 0.6*H)
+    p.createCanvas(W, H)
     p.angleMode(RADIANS)
   }
 
